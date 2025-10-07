@@ -7,7 +7,7 @@ export function WhyBuild() {
         <div>
           <SectionHeading>
             Why We're <br className="hidden md:block" /> Building{" "}
-            <div className="bg-primary px-2 rounded text-primary-foreground">
+            <div className="bg-primary px-2 rounded text-primary-foreground w-fit">
               City Protocol
             </div>
           </SectionHeading>
