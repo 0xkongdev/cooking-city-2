@@ -2,16 +2,16 @@ import { SectionHeading } from "@/components/section-heading";
 
 export function WhyBuild() {
   return (
-    <section className="px-4 md:px-10 py-6 md:py-16" aria-labelledby="why">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-5 md:gap-14 items-start">
+    <section className="px-4 md:px-25 py-6 md:py-20" aria-labelledby="why">
+      <div className="grid md:grid-cols-2 gap-5 md:gap-[250px] items-stretch">
         <div>
           <SectionHeading>
-            Why We Build A{" "}
+            Why We <br className="md:block hidden" /> Build A{" "}
             <span className="bg-primary px-2 rounded text-primary-foreground">
               City
             </span>
           </SectionHeading>
-          <p className="mt-3 text-muted-foreground leading-6 text-sm">
+          <p className="mt-3 text-muted-foreground leading-6 text-sm md:text-base">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -23,7 +23,7 @@ export function WhyBuild() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div className="h-60 md:h-80 w-full bg-neutral-900" />
+        <div className="h-60 md:h-auto w-full bg-neutral-900" />
       </div>
     </section>
   );

@@ -19,17 +19,50 @@ function DesktopNav() {
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuLink href="#solutions" className="px-4 py-2">
+          <NavigationMenuLink
+            href="#solutions"
+            className="px-10 py-2 text-base font-medium"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("solutions");
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+                history.pushState(null, "", "#solutions");
+              }
+            }}
+          >
             Solutions
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink href="#resources" className="px-4 py-2">
+          <NavigationMenuLink
+            href="#resources"
+            className="px-10 py-2 text-base font-medium"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("resources");
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+                history.pushState(null, "", "#resources");
+              }
+            }}
+          >
             Resources
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink href="#contact" className="px-4 py-2">
+          <NavigationMenuLink
+            href="#contact"
+            className="px-10 py-2 text-base font-medium"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("contact");
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+                history.pushState(null, "", "#contact");
+              }
+            }}
+          >
             Community
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -162,8 +195,8 @@ function MobileNav() {
 
 export function SiteHeader() {
   return (
-    <div className="px-4 md:px-10 py-4">
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
+    <div className="px-4 md:px-10 py-4 md:border-b md:border-[#D4D4D8]">
+      <div className="flex items-center justify-between">
         <Link
           href="/"
           aria-label="City Protocol home"

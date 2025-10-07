@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero";
 import { WhyBuild } from "@/components/why-build";
 import { Solutions } from "@/components/solutions";
 import { Resources } from "@/components/resources";
-import { Contact } from "@/components/contact";
+// import { Contact } from "@/components/contact";
 import { SiteFooter } from "@/components/site-footer";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <WhyBuild />
       <Solutions />
       <Resources />
-      <Contact />
+      {/* <Contact /> */}
       <SiteFooter />
     </main>
   );
