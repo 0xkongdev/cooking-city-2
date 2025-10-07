@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import resource1 from "@/images/resources/resource-1.png";
@@ -47,7 +49,17 @@ export function Resources() {
                   {title}
                 </h3>
                 <p className="mt-2 text-muted-foreground">{description}</p>
-                <Button type="button" className="mt-20 w-full">
+                <Button
+                  onClick={() => {
+                    const el = document.getElementById("contact");
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth", block: "start" });
+                      history.pushState(null, "", "#contact");
+                    }
+                  }}
+                  type="button"
+                  className="mt-20 w-full"
+                >
                   Contact us
                 </Button>
               </div>
