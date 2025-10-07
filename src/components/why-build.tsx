@@ -6,21 +6,23 @@ export function WhyBuild() {
       <div className="grid md:grid-cols-2 gap-5 md:gap-[250px] items-stretch">
         <div>
           <SectionHeading>
-            Why We <br className="md:block hidden" /> Build A{" "}
-            <span className="bg-primary px-2 rounded text-primary-foreground">
-              City
-            </span>
+            Why We're <br className="hidden md:block" /> Building{" "}
+            <div className="bg-primary px-2 rounded text-primary-foreground">
+              City Protocol
+            </div>
           </SectionHeading>
           <p className="mt-3 text-muted-foreground leading-6 text-sm md:text-base">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            For the first time in history, intellectual property can be
+            programmed, traded, and financed like any other asset class. But the
+            infrastructure doesn't exist yet. <br />
+            City Protocol is that infrastructure. We're building the financial
+            layer where IP becomes liquid capital where creators launch,
+            communities invest, and sustainable revenue flows back to those who
+            build.
+            <br /> Every breakthrough IP from films to protocols to brands
+            deserves access to markets. City Protocol makes that possible.{" "}
+            <br />
+            This is the IP capital market. And it starts here.
           </p>
         </div>
         <div className="h-60 md:h-auto w-full bg-neutral-900" />
