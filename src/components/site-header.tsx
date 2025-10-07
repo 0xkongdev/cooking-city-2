@@ -169,7 +169,7 @@ function MobileNav() {
           </ul>
         </nav>
 
-        <div className="px-5 pb-5 pt-8">
+        {/* <div className="px-5 pb-5 pt-8">
           <Button asChild className="w-full">
             <Link
               href="#contact"
@@ -187,7 +187,7 @@ function MobileNav() {
               Get in touch
             </Link>
           </Button>
-        </div>
+        </div> */}
       </SheetContent>
     </Sheet>
   );
@@ -195,7 +195,7 @@ function MobileNav() {
 
 export function SiteHeader() {
   return (
-    <div className="px-4 md:px-10 py-4 md:border-b md:border-[#D4D4D8]">
+    <div className="sticky inset-x-0 top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 md:px-10 py-4 md:border-b md:border-[#D4D4D8]">
       <div className="flex items-center justify-between">
         <Link
           href="/"
