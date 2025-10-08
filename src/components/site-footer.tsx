@@ -59,18 +59,14 @@ export function SiteFooter() {
             <Image src={xIcon} alt="X" className="size-8" />
           </Link>
         </div>
-        <div className="md:col-span-5 flex justify-end col-span-2">
+        <div className="md:col-span-5 flex -ml-3.5 mt-4 md:mt-0 md:ml-0 md:justify-end col-span-2">
           {/* <Image
             src={bigLogo}
             alt="City Protocol"
             className="w-full h-auto mt-[36px] md:mt-0 self-end md:w-1/2 md:max-w-[500px]"
           /> */}
-          <div className="flex text-[#193246] text-6xl font-bold items-end">
-            <Logo className="size-38 md:size-40 -mb-4 md:-mb-5 -mr-3" />
-            <div>
-              <div>City</div>
-              <div>Protocol</div>
-            </div>
+          <div className="flex text-[#193246] h-22 -ml-1 md:-ml-0 md:h-16 md:items-end w-full md:w-auto">
+            <Logo />
           </div>
         </div>
       </div>
