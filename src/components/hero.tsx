@@ -8,12 +8,12 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="pb-6 md:min-h-screen overflow-x-hidden relative">
+    <section className="md:min-h-screen overflow-x-hidden relative pb-16">
       <div className="max-w-6xl px-4 md:px-10 mx-auto mt-2 md:mt-8">
         <h1 className="text-[38px] md:text-[80px] font-bold md:text-center leading-tight text-foreground">
-          The IP <br className="md:hidden" />{" "}
+          The <br className="md:hidden" />{" "}
           <span className="bg-primary text-primary-foreground px-2 rounded">
-            Capital Market{" "}
+            IP Capital Market{" "}
           </span>{" "}
           <br className="hidden md:block" />
           Starts Here
