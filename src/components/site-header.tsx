@@ -10,8 +10,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import Image from "next/image";
-import logo from "@/images/logo.png";
 import Link from "next/link";
 import Logo from "./logo";
 
@@ -92,8 +90,12 @@ function MobileNav() {
         onCloseAutoFocus={(e) => e.preventDefault()}
       >
         <div className="px-5 pt-5 pb-3 border-b">
-          <div className="flex items-center gap-3">
-            <Logo className="size-8" />
+          <div className="flex text-[#193246] text-2xl font-bold items-end leading-6">
+            <Logo className="size-16 -mb-2" />
+            <div>
+              <div>City</div>
+              <div>Protocol</div>
+            </div>
           </div>
         </div>
 
@@ -203,7 +205,13 @@ export function SiteHeader() {
           aria-label="City Protocol home"
           className="inline-flex items-center gap-2"
         >
-          <Logo className="size-16" />
+          <div className="flex text-[#193246] text-2xl font-bold items-end leading-6">
+            <Logo className="size-16 -mb-2" />
+            <div>
+              <div>City</div>
+              <div>Protocol</div>
+            </div>
+          </div>
         </Link>
         <DesktopNav />
         <MobileNav />

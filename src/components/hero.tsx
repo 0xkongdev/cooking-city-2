@@ -20,7 +20,7 @@ export function Hero() {
         </h1>
         <p className="mt-2 md:text-center text-sm md:text-base text-muted-foreground">
           Our full lifecycle stack gives developers a clear path from first
-          believers to durable economies.
+          believers to sustinable economies.
         </p>
       </div>
       {/* <Image
