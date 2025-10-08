@@ -2,10 +2,13 @@
 
 import Lottie from "lottie-react";
 import bannerAnimation from "@/animations/banner.json";
+import { cn } from "@/lib/utils";
+import { trustedBy } from "@/lib/constants";
+import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="pb-6 md:min-h-screen overflow-x-hidden">
+    <section className="pb-6 md:min-h-screen overflow-x-hidden relative">
       <div className="max-w-6xl px-4 md:px-10 mx-auto mt-2 md:mt-8">
         <h1 className="text-[38px] md:text-[80px] font-bold md:text-center leading-tight text-foreground">
           The IP <br className="md:hidden" />{" "}
@@ -39,6 +42,102 @@ export function Hero() {
           preserveAspectRatio: "xMidYMid slice",
         }}
       />
+
+      <div className="marquee-container absolute bottom-0 left-0 right-0">
+        {/* Left Marquee */}
+        <div className="marquee-track h-full">
+          <div className="flex animate-marquee-left whitespace-nowrap h-full items-center">
+            {/* First set of logos */}
+            {trustedBy.map((company, index) => (
+              <div
+                key={`left-first-${
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  index
+                }`}
+                className={cn(
+                  "flex-shrink-0 mx-4 flex items-center justify-center h-full",
+                  company.height ? company.height : "h-full",
+                )}
+              >
+                <Image
+                  src={company.image}
+                  alt={`trusted by ${index + 1}`}
+                  className="h-full w-auto object-contain filter transition-all duration-300"
+                  priority={index < 5}
+                />
+              </div>
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {trustedBy.map((company, index) => (
+              <div
+                key={`left-second-${
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  index
+                }`}
+                className={cn(
+                  "flex-shrink-0 mx-4 flex items-center justify-center h-full",
+                  company.height ? company.height : "h-full",
+                )}
+              >
+                <Image
+                  src={company.image}
+                  alt={`trusted by ${index + 1}`}
+                  className="h-full w-auto object-contain transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Right Marquee */}
+        <div className="marquee-track h-full">
+          <div className="flex animate-marquee-right whitespace-nowrap h-full">
+            {/* First set of logos */}
+            {trustedBy.map((company, index) => (
+              <div
+                key={`right-first-${
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  index
+                }`}
+                className={cn(
+                  "flex-shrink-0 mx-4 flex items-center justify-center h-1/2",
+                  // index === trustedBy.length - 1 ? "h-1/2" : "h-full"
+                )}
+              >
+                <Image
+                  src={company.image}
+                  alt={`trusted by ${index + 1}`}
+                  className={cn(
+                    "h-full w-auto object-contain filter transition-all duration-300",
+                    company.height,
+                  )}
+                />
+              </div>
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {trustedBy.map((company, index) => (
+              <div
+                key={`right-second-${
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  index
+                }`}
+                className={cn(
+                  "flex-shrink-0 mx-4 flex items-center justify-center h-1/2",
+                  // index === trustedBy.length - 1 ? "h-1/2" : "h-full"
+                )}
+              >
+                <Image
+                  src={company.image}
+                  alt={`trusted by ${index + 1}`}
+                  className={cn(
+                    "h-full w-auto object-contain transition-all duration-300",
+                  )}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
