@@ -65,7 +65,7 @@ export function SiteFooter() {
             alt="City Protocol"
             className="w-full h-auto mt-[36px] md:mt-0 self-end md:w-1/2 md:max-w-[500px]"
           /> */}
-          <div className="flex text-[#193246] h-22 -ml-1 md:-ml-0 md:h-16 md:items-end w-full md:w-auto">
+          <div className="flex text-[#193246] h-22 -ml-1 md:-ml-0 md:h-16 md:self-end md:items-end w-full md:w-auto">
             <Logo />
           </div>
         </div>
