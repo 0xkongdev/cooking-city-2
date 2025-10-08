@@ -10,7 +10,9 @@ export function WhyBuild() {
             <div className="bg-primary px-2 rounded text-primary-foreground w-fit">
               Building City
             </div>{" "}
-            Protocol
+            <div className="bg-primary px-2 rounded text-primary-foreground w-fit mt-2">
+              Protocol
+            </div>
           </SectionHeading>
           <p className="mt-3 text-muted-foreground leading-6 text-sm md:text-base">
             For the first time in history, intellectual property can be
