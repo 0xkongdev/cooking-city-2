@@ -1,7 +1,5 @@
 "use client";
-import heroImg from "@/images/hero-img.webp";
-import heroDesktopImg from "@/images/hero-desktop-img.webp";
-import Image from "next/image";
+
 import Lottie from "lottie-react";
 import bannerAnimation from "@/animations/banner.json";
 
