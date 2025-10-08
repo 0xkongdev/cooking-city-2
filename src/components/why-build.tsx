@@ -1,9 +1,11 @@
 import { SectionHeading } from "@/components/section-heading";
+import Image from "next/image";
+import whyBuild from "@/images/why-build-img.webp";
 
 export function WhyBuild() {
   return (
     <section className="px-4 md:px-25 py-6 md:py-20" aria-labelledby="why">
-      <div className="grid md:grid-cols-2 gap-5 md:gap-[250px] items-stretch">
+      <div className="grid md:grid-cols-2 gap-5 md:gap-[150px] items-stretch">
         <div>
           <SectionHeading>
             Why We're
@@ -27,7 +29,13 @@ export function WhyBuild() {
             This is the IP capital market. And it starts here.
           </p>
         </div>
-        <div className="h-60 md:h-auto w-full bg-neutral-900" />
+        <div className="h-60 md:h-auto w-full">
+          <Image
+            src={whyBuild}
+            alt="Why We're Building"
+            className="w-full h-full object-contain"
+          />
+        </div>
       </div>
     </section>
   );
