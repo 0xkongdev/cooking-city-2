@@ -1,10 +1,13 @@
+"use client";
 import heroImg from "@/images/hero-img.webp";
 import heroDesktopImg from "@/images/hero-desktop-img.webp";
 import Image from "next/image";
+import Lottie from "lottie-react";
+import bannerAnimation from "@/animations/banner.json";
 
 export function Hero() {
   return (
-    <section className="pb-6 md:min-h-screen">
+    <section className="pb-6 md:min-h-screen overflow-x-hidden">
       <div className="max-w-6xl px-4 md:px-10 mx-auto mt-2 md:mt-8">
         <h1 className="text-[38px] md:text-[80px] font-bold md:text-center leading-tight text-foreground">
           The IP <br className="md:hidden" />{" "}
@@ -14,12 +17,12 @@ export function Hero() {
           <br className="hidden md:block" />
           Starts Here
         </h1>
-        <p className="mt-2 md:mt-6 md:text-center text-sm md:text-base text-muted-foreground">
+        <p className="mt-2 md:text-center text-sm md:text-base text-muted-foreground">
           Our full lifecycle stack gives developers a clear path from first
           believers to durable economies.
         </p>
       </div>
-      <Image
+      {/* <Image
         src={heroImg}
         alt="Hero"
         className="w-full h-auto mt-[30px] md:hidden"
@@ -28,6 +31,15 @@ export function Hero() {
         src={heroDesktopImg}
         alt="Hero"
         className="w-full h-auto mt-[30px] hidden md:block"
+      /> */}
+
+      <Lottie
+        animationData={bannerAnimation}
+        loop={true}
+        className="w-full h-auto mt-[20px] scale-x-105"
+        rendererSettings={{
+          preserveAspectRatio: "xMidYMid slice",
+        }}
       />
     </section>
   );
