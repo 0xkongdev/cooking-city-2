@@ -13,6 +13,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import Link from "next/link";
+import Logo from "./logo";
 
 function DesktopNav() {
   return (
@@ -92,7 +93,7 @@ function MobileNav() {
       >
         <div className="px-5 pt-5 pb-3 border-b">
           <div className="flex items-center gap-3">
-            <Image src={logo} alt="City Protocol" className="size-8" />
+            <Logo className="size-8" />
           </div>
         </div>
 
@@ -195,14 +196,14 @@ function MobileNav() {
 
 export function SiteHeader() {
   return (
-    <div className="sticky inset-x-0 top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 md:px-10 py-4 md:border-b md:border-[#D4D4D8]">
+    <div className="sticky inset-x-0 top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 md:px-10 py-2 md:border-b md:border-[#D4D4D8]">
       <div className="flex items-center justify-between">
         <Link
           href="/"
           aria-label="City Protocol home"
           className="inline-flex items-center gap-2"
         >
-          <Image src={logo} alt="City Protocol" className="size-12" />
+          <Logo className="size-16" />
         </Link>
         <DesktopNav />
         <MobileNav />

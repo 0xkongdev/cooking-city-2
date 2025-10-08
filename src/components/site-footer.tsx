@@ -1,8 +1,9 @@
+"use client";
 import Link from "next/link";
 import xIcon from "@/images/x-icon.svg";
 import Image from "next/image";
-import bigLogo from "@/images/big-logo.webp";
 import { cn } from "@/lib/utils";
+import Logo from "./logo";
 
 const footerData = {
   sections: [
@@ -59,11 +60,18 @@ export function SiteFooter() {
           </Link>
         </div>
         <div className="md:col-span-5 flex justify-end col-span-2">
-          <Image
+          {/* <Image
             src={bigLogo}
             alt="City Protocol"
             className="w-full h-auto mt-[36px] md:mt-0 self-end md:w-1/2 md:max-w-[500px]"
-          />
+          /> */}
+          <div className="flex text-[#193246] text-6xl font-bold items-end">
+            <Logo className="size-38 md:size-40 -mb-4 md:-mb-5 -mr-3" />
+            <div>
+              <div>City</div>
+              <div>Protocol</div>
+            </div>
+          </div>
         </div>
       </div>
 
