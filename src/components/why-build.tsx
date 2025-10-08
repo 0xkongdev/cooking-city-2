@@ -6,10 +6,11 @@ export function WhyBuild() {
       <div className="grid md:grid-cols-2 gap-5 md:gap-[250px] items-stretch">
         <div>
           <SectionHeading>
-            Why We're <br className="hidden md:block" /> Building{" "}
+            Why We're
             <div className="bg-primary px-2 rounded text-primary-foreground w-fit">
-              City Protocol
-            </div>
+              Building City
+            </div>{" "}
+            Protocol
           </SectionHeading>
           <p className="mt-3 text-muted-foreground leading-6 text-sm md:text-base">
             For the first time in history, intellectual property can be
