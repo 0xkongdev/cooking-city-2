@@ -78,7 +78,7 @@ export function SiteFooter() {
             <ul className="space-y-2 text-lg font-bold text-foreground">
               {items.map(({ title, link }) => (
                 <li key={title}>
-                  <Link href={link} target="_blank">
+                  <Link href={link} target="_blank" className="hover:underline">
                     {title}
                   </Link>
                 </li>
@@ -92,7 +92,7 @@ export function SiteFooter() {
             FOLLOW US
           </h4>
           <Link
-            href="https://x.com/cookingcityHQ"
+            href="https://x.com/cityprotocolHQ"
             target="_blank"
             className="size-16 bg-[#9B7DF5] flex items-center justify-center"
           >

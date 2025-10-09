@@ -9,9 +9,8 @@ const geistSans = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "City Protocol — Grow The Inner Power Of Intellectual Property",
-  description:
-    "City Protocol: solutions and mandates to build, scale, and invest in IP-powered cities.",
+  title: "City Protocol",
+  description: "The IP Capital Market Starts Here",
   metadataBase: new URL("https://city.example.com"),
   openGraph: {
     title: "City Protocol",

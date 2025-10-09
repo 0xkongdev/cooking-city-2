@@ -1,20 +1,19 @@
 "use client";
 
-import { MenuIcon, Layers, BookOpen, Users, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { MenuIcon } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import Logo from "./logo";
-import TextLogo from "./text-logo.svg";
 
 function DesktopNav() {
   return (
@@ -31,50 +30,35 @@ function DesktopNav() {
                   href="https://cityprotocol.co/cityid"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   City ID
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
-                <a
-                  href="https://city-protocol.gitbook.io/docs/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
-                >
+                <div className="px-2 py-2 text-sm font-semibold">
                   Viral City
-                </a>
+                </div>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
-                <a
-                  href="https://city-protocol.gitbook.io/docs/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
-                >
+                <div className="px-2 py-2 text-sm font-semibold">
                   Totem Toy City
-                </a>
+                </div>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <a
                   href="https://cooking.city/en"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   Cooking City
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
-                <a
-                  href="https://city-protocol.gitbook.io/docs/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
-                >
+                <div className="px-2 py-2 text-sm font-semibold">
                   IP Strategy
-                </a>
+                </div>
               </NavigationMenuLink>
             </div>
           </NavigationMenuContent>
@@ -87,40 +71,40 @@ function DesktopNav() {
             <div className="grid min-w-[165px] gap-1">
               <NavigationMenuLink asChild>
                 <a
-                  href="https://city-protocol.gitbook.io/docs/"
+                  href="https://city-protocol.gitbook.io/docs/three-mandates/the-issuance-mandate"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   The Issuance Mandate
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <a
-                  href="https://city-protocol.gitbook.io/docs/"
+                  href="https://city-protocol.gitbook.io/docs/three-mandates/the-ai-agentic-scaling-mandate"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   The AI Agentic Scaling Mandate
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <a
-                  href="https://city-protocol.gitbook.io/docs/"
+                  href="https://city-protocol.gitbook.io/docs/three-mandates/the-ip-strategy-mandate"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   The IP RWA Mandate
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <a
-                  href="https://city-protocol.gitbook.io/docs/"
+                  href="https://city-protocol.gitbook.io/docs/three-mandates/the-creator-journey-from-zero-to-empire"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   The Creator Journey: From Zero To Empire
                 </a>
@@ -139,7 +123,7 @@ function DesktopNav() {
                   href="https://x.com/cityprotocolHQ"
                   target="_blank"
                   rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   Twitter
                 </a>
@@ -181,34 +165,47 @@ function MobileNav() {
           <ul>
             <li>
               <div className="px-5">
-                <div className="text-xs tracking-widest text-[#193246]/70 font-semibold uppercase border-y-2 border-[#7F6CFF] py-3">
+                <div className="tracking-widest pl-[10%] text-[#193246]/70 font-semibold uppercase border-y-2 border-[#7F6CFF] py-3">
                   Solutions
                 </div>
                 <ul className="divide-y divide-transparent ">
-                  <li >
-                    <a  href="https://cityprotocol.co/cityid" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                  <li>
+                    <a
+                      href="https://cityprotocol.co/cityid"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
                       City ID
                     </a>
                   </li>
                   <li>
-                    <a href="https://city-protocol.gitbook.io/docs/" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                    <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
                       Viral City
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a href="https://city-protocol.gitbook.io/docs/" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                    <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
                       Totem Toy City
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a href="https://cooking.city/en" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                    <a
+                      href="https://cooking.city/en"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
                       Cooking City
                     </a>
                   </li>
                   <li>
-                    <a href="https://city-protocol.gitbook.io/docs/" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                    <div
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
                       IP Strategy
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -216,19 +213,24 @@ function MobileNav() {
 
             <li className="mt-6">
               <div className="px-5">
-                <div className="text-xs tracking-widest text-[#193246]/70 font-semibold uppercase border-y-2 border-[#7F6CFF] py-3">
+                <div className="tracking-widest pl-[10%] text-[#193246]/70 font-semibold uppercase border-y-2 border-[#7F6CFF] py-3">
                   Resources
                 </div>
                 <ul>
                   <li>
-                    <a href="https://city-protocol.gitbook.io/docs/" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                    <a
+                      href="https://city-protocol.gitbook.io/docs/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
                       City Protocol Docs
                     </a>
                   </li>
                   <li>
-                    <a href="https://city-protocol.gitbook.io/docs/" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                    <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
                       City Launchpad Docs
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -236,12 +238,17 @@ function MobileNav() {
 
             <li className="mt-6">
               <div className="px-5">
-                <div className="text-xs tracking-widest text-[#193246]/70 font-semibold uppercase border-y-2 border-[#7F6CFF] py-3">
+                <div className="tracking-widest pl-[10%] text-[#193246]/70 font-semibold uppercase border-y-2 border-[#7F6CFF] py-3">
                   Community
                 </div>
                 <ul>
                   <li>
-                    <a href="https://x.com/cityprotocolHQ" target="_blank" rel="noreferrer" className="block py-3 text-xs font-semibold text-[#193246]">
+                    <a
+                      href="https://x.com/cityprotocolHQ"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
                       Twitter
                     </a>
                   </li>
