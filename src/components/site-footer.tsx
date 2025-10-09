@@ -78,7 +78,9 @@ export function SiteFooter() {
             <ul className="space-y-2 text-lg font-bold text-foreground">
               {items.map(({ title, link }) => (
                 <li key={title}>
-                  <Link href={link}>{title}</Link>
+                  <Link href={link} target="_blank">
+                    {title}
+                  </Link>
                 </li>
               ))}
             </ul>
