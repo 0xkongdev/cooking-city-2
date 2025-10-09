@@ -5,25 +5,61 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Logo from "./logo";
 
+// Solution
+// Cooking City: https://cooking.city/en
+// City ID: Cityprotocol.co/cityid
+// MANDATES
+// The Issuance Mandate: https://city-protocol.gitbook.io/docs/three-mandates/the-issuance-mandate
+// The AI Agentic Scaling Mandate: https://city-protocol.gitbook.io/docs/three-mandates/the-ai-agentic-scaling-mandate
+// The IP RWA Mandate: https://city-protocol.gitbook.io/docs/three-mandates/the-ip-strategy-mandate
+// The Creator Journey: From Zero to Empire: https://city-protocol.gitbook.io/docs/three-mandates/the-creator-journey-from-zero-to-empire
+
 const footerData = {
   sections: [
     {
       title: "SOLUTIONS",
       items: [
-        "City ID",
-        "Viral city",
-        "Totem Toy city",
-        "Cooking City",
-        "IP Strategy",
+        {
+          title: "City ID",
+          link: "https://cityprotocol.co/cityid",
+        },
+        {
+          title: "Viral city",
+          link: "#",
+        },
+        {
+          title: "Totem Toy city",
+          link: "#",
+        },
+        {
+          title: "Cooking City",
+          link: "https://cooking.city/en",
+        },
+        {
+          title: "IP Strategy",
+          link: "#",
+        },
       ],
     },
     {
       title: "MANDATES",
       items: [
-        "The Issuance Mandate",
-        "The AI Agentic Scaling Mandate",
-        "The IP RWA Mandate",
-        "The Creator Journey: From Zero to Empire",
+        {
+          title: "The Issuance Mandate",
+          link: "https://city-protocol.gitbook.io/docs/three-mandates/the-issuance-mandate",
+        },
+        {
+          title: "The AI Agentic Scaling Mandate",
+          link: "https://city-protocol.gitbook.io/docs/three-mandates/the-ai-agentic-scaling-mandate",
+        },
+        {
+          title: "The IP RWA Mandate",
+          link: "https://city-protocol.gitbook.io/docs/three-mandates/the-ip-strategy-mandate",
+        },
+        {
+          title: "The Creator Journey: From Zero to Empire",
+          link: "https://city-protocol.gitbook.io/docs/three-mandates/the-creator-journey-from-zero-to-empire",
+        },
       ],
     },
   ],
@@ -40,8 +76,10 @@ export function SiteFooter() {
           >
             <h4 className="font-medium text-xl mb-3 text-[#030405]">{title}</h4>
             <ul className="space-y-2 text-lg font-bold text-foreground">
-              {items.map((t) => (
-                <li key={t}>{t}</li>
+              {items.map(({ title, link }) => (
+                <li key={title}>
+                  <Link href={link}>{title}</Link>
+                </li>
               ))}
             </ul>
           </div>
