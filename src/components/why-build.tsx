@@ -1,6 +1,6 @@
 import { SectionHeading } from "@/components/section-heading";
 import Image from "next/image";
-import whyBuild from "@/images/why-build-img.webp";
+import whyBuild from "@/images/why_build_gif.gif";
 
 export function WhyBuild() {
   return (
