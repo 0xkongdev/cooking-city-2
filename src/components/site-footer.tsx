@@ -112,7 +112,7 @@ export function SiteFooter() {
       </div>
 
       <div className="text-center px-4 md:px-25 border-t border-[#839BB7] text-lg font-medium text-foreground py-4 mt-8">
-        © 2025 <span className="text-[#9B7DF5]">RICH</span>. All rights
+        © 2025 <span className="text-[#9B7DF5]">City Protocol</span>. All rights
         reserved.
       </div>
     </footer>

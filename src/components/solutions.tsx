@@ -10,7 +10,7 @@ export function Solutions() {
             "Viral City",
             "Totem Toy City",
             "Cooking City",
-            "Ip Stategy",
+            "Ip Strategy",
           ].map((item, idx) => (
             <div
               key={item}

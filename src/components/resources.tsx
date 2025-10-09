@@ -14,7 +14,7 @@ const resources = [
         the infrastructure for creators to tokenize and launch IP without
         gatekeepers.
         <span className="block h-1 md:h-2" /> Through our fair launch mechanisms
-        bonding curves, conviction pools, and automated price discovery any
+        bonding curves, conviction pools, and automated price discovery, any
         creator can bring their IP to market in minutes, not months.{" "}
         <span className="block h-1 md:h-2" /> Just transparent, on-chain
         issuance where early supporters and creators share upside equally. This
@@ -30,7 +30,7 @@ const resources = [
       <>
         The AI Agentic Scaling Mandate transforms consumers into co-creators
         through AI-powered tools and phygital experiences that turn your
-        favorite characters from screen to tab
+        favorite characters from screen to tab.
         <span className="block h-1 md:h-2" /> Traditional growth is guesswork.
         Creators spam content everywhere hoping something sticks. Communities
         form accidentally. Attribution is impossible, so contributor rewarded.
@@ -38,7 +38,7 @@ const resources = [
         generative tools and incentives to growth. City ID creates portable
         reputation. Viral City empowers every fan to create quality content.
         Totem Toy City extends digital IP into physical products—turning
-        on-screen characters into rea ollectibles.{" "}
+        on-screen characters into real collectibles.{" "}
         <span className="block h-1 md:h-2" />
         This isn't growth hacking. It's growth architecture—sustainable systems
         that compound value and transform passive audiences into active
@@ -47,7 +47,7 @@ const resources = [
     ),
   },
   {
-    title: "The Ip RWA Mandate",
+    title: "The IP RWA Mandate",
     image: resource3,
     description: (
       <>
