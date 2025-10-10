@@ -156,7 +156,7 @@ function MobileNav() {
         onCloseAutoFocus={(e) => e.preventDefault()}
       >
         <div className="px-5 pt-5 pb-8">
-          <div className="flex text-[#193246] -ml-1.5 md:-ml-0 h-10 text-2xl font-bold items-end leading-6">
+          <div className="flex text-[#193246] h-10 text-2xl font-bold items-center leading-6">
             <Logo />
           </div>
         </div>
@@ -289,9 +289,9 @@ export function SiteHeader() {
         <Link
           href="/"
           aria-label="City Protocol home"
-          className="inline-flex items-center gap-2"
+          className="inline-flex items-center gap-2 flex-shrink-0"
         >
-          <div className="flex text-[#193246] -ml-1.5 md:-ml-0 h-10 md:h-16 text-2xl font-bold items-end leading-6">
+          <div className="flex text-[#193246] h-10 md:h-16 text-2xl font-bold items-center leading-6 min-w-0">
             <Logo />
           </div>
         </Link>

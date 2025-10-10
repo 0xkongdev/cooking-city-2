@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   title: "City Protocol",
   description: "The IP Capital Market Starts Here",
   metadataBase: new URL("https://city.example.com"),
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   openGraph: {
     title: "City Protocol",
     description:
