@@ -119,26 +119,6 @@
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* Mobile-specific fixes */
-  @media (max-width: 768px) {
-    html {
-      -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-    }
-    
-    /* Fix for iOS Safari viewport issues */
-    body {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    
-    /* Ensure proper touch targets */
-    button, a, [role="button"] {
-      min-height: 44px;
-      min-width: 44px;
-    }
-  }
 }
 
 .badge {
