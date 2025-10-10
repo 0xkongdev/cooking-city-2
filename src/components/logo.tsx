@@ -6,14 +6,18 @@ import { cn } from "@/lib/utils";
 
 const Logo = () => {
   return (
-    <>
+    <div className="flex items-center gap-2">
       <Lottie
         animationData={groovyWalkAnimation}
         loop={true}
-        className={cn("h-full w-auto")}
+        className={cn("h-full w-auto flex-shrink-0")}
       />
-      <Image src={TextLogo} alt="Logo" className={cn("h-full w-auto")} />
-    </>
+      <Image 
+        src={TextLogo} 
+        alt="City Protocol Logo" 
+        className={cn("h-full w-auto flex-shrink-0")} 
+      />
+    </div>
   );
 };
 
