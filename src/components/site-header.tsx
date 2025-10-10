@@ -291,7 +291,7 @@ export function SiteHeader() {
           aria-label="City Protocol home"
           className="inline-flex items-center gap-2"
         >
-          <div className="flex text-[#193246] h-10 md:h-16 text-2xl font-bold items-center leading-6">
+          <div className="flex text-[#193246] w-[150px] -ml-2 md:-ml-0 md:w-auto h-10 md:h-16 text-2xl font-bold items-center justify-start leading-6">
             <Logo />
           </div>
         </Link>
