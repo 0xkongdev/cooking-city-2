@@ -1,8 +1,8 @@
 "use client";
-import Link from "next/link";
 import xIcon from "@/images/x-icon.svg";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 import Logo from "./logo";
 
 // Solution
@@ -25,11 +25,11 @@ const footerData = {
         },
         {
           title: "Viral city",
-          link: "#",
+          link: "https://viral-city.cityprotocol.co/",
         },
         {
           title: "Totem Toy city",
-          link: "#",
+          link: "https://totem.cityprotocol.co/",
         },
         {
           title: "Cooking City",
@@ -37,7 +37,7 @@ const footerData = {
         },
         {
           title: "IP Strategy",
-          link: "#",
+          link: "https://cityprotocol.co/ipstrategy/",
         },
       ],
     },
