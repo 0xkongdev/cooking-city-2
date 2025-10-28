@@ -2,12 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
@@ -122,6 +122,16 @@ function DesktopNav() {
                   className="px-2 py-2 text-sm font-semibold hover:underline"
                 >
                   The Creator Journey: From Zero To Empire
+                </a>
+              </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <a
+                  href="https://cityprotocol.co/mica-whitepaper"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
+                >
+                  MiCA Whitepaper
                 </a>
               </NavigationMenuLink>
             </div>
@@ -258,6 +268,16 @@ function MobileNav() {
                     <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
                       City Launchpad Docs
                     </div>
+                  </li>
+                  <li>
+                    <a
+                      href="https://cityprotocol.co/mica-whitepaper"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
+                      MiCA Whitepaper
+                    </a>
                   </li>
                 </ul>
               </div>
