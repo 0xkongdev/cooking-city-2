@@ -124,16 +124,7 @@ function DesktopNav() {
                   The Creator Journey: From Zero To Empire
                 </a>
               </NavigationMenuLink>
-              <NavigationMenuLink asChild>
-                <a
-                  href="https://cityprotocol.co/mica-whitepaper"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-2 py-2 text-sm font-semibold hover:underline"
-                >
-                  MiCA Whitepaper
-                </a>
-              </NavigationMenuLink>
+
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -268,18 +259,7 @@ function MobileNav() {
                     <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
                       City Launchpad Docs
                     </div>
-                  </li>
-                  <li>
-                    <a
-                      href="https://cityprotocol.co/mica-whitepaper"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
-                    >
-                      MiCA Whitepaper
-                    </a>
-                  </li>
-                </ul>
+                  </li>                </ul>
               </div>
             </li>
 
