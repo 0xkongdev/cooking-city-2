@@ -72,7 +72,7 @@ export function SiteFooter() {
         {footerData.sections.map(({ title, items }, index) => (
           <div
             key={title}
-            className={cn(index === 1 ? "md:col-span-4" : "md:col-span-2")}
+            className={cn(index === 1 ? "md:col-span-4" : "md:col-span-3")}
           >
             <h4 className="font-medium text-xl mb-3 text-[#030405]">{title}</h4>
             <ul className="space-y-2 text-lg font-bold text-foreground">
@@ -99,7 +99,7 @@ export function SiteFooter() {
             <Image src={xIcon} alt="X" className="size-8" />
           </Link>
         </div>
-        <div className="md:col-span-5 flex -ml-3.5 mt-4 md:mt-0 md:ml-0 md:justify-end col-span-2">
+        <div className="md:col-span-4 flex -ml-3.5 mt-4 md:mt-0 md:ml-0 md:justify-end col-span-2">
           {/* <Image
             src={bigLogo}
             alt="City Protocol"
