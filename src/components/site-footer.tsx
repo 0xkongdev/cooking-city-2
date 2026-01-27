@@ -18,28 +18,28 @@ const footerData = {
   sections: [
     {
       title: "SOLUTIONS",
-      items: [
-        {
-          title: "City ID",
-          link: "https://cityprotocol.co/cityid",
-        },
-        {
-          title: "Viral city",
-          link: "#",
-        },
-        {
-          title: "Totem Toy city",
-          link: "#",
-        },
-        {
-          title: "Cooking City",
-          link: "https://cooking.city/en",
-        },
-        {
-          title: "IP Strategy",
-          link: "#",
-        },
-      ],
+          items: [
+            {
+              title: "City ID / City Passport",
+              link: "https://cityprotocol.co/cityid/",
+            },
+            {
+              title: "Viral City",
+              link: "https://viral-city-baseapp.cityprotocol.co/dashboard",
+            },
+            {
+              title: "City Vault (Coming Soon)",
+              link: "#",
+            },
+            {
+              title: "Totem Toy City",
+              link: "https://totem.cityprotocol.co/",
+            },
+            {
+              title: "IP Strategy",
+              link: "https://cityprotocol.co/ipstrategy/home",
+            },
+          ],
     },
     {
       title: "MANDATES",
