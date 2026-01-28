@@ -17,10 +17,6 @@ export function WhyBuild() {
           </SectionHeading>
           <p className="mt-3 text-muted-foreground leading-6 text-sm md:text-base">
             Every breakout onchain assets is a feedback loop between attention and capital. Capital funds production and distribution; attention creates demand, revenue, and the wealth effect that attracts more capital. <br />
-            City Protocol is that infrastructure. We're building the financial
-            layer where IP becomes liquid capital where creators launch,
-            communities invest, and sustainable revenue flows back to those who
-            build.
             <br />  If you only solve one side, on-chain assets can’t either launch or sustain. 
             <br /> City Protocol is built as an Attention - Capital flywheel, a single system that bootstraps and compounds both.
           </p>
