@@ -21,13 +21,13 @@ export function WhyBuild() {
             <br /> City Protocol is built as an Attention - Capital flywheel, a single system that bootstraps and compounds both.
           </p>
         </div>
-        <div className="h-60 md:h-auto w-full">
+        {/* <div className="h-60 md:h-auto w-full">
           <Image
             src={whyBuild}
             alt="Why We're Building"
             className="w-full h-full object-contain"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
