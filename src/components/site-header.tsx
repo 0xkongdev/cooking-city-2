@@ -36,14 +36,24 @@ function DesktopNav() {
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
-                <div className="px-2 py-2 text-sm font-semibold">
+                <a
+                  href="https://viral-city.cityprotocol.co/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
+                >
                   Viral City
-                </div>
+                </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
-                <div className="px-2 py-2 text-sm font-semibold">
+                <a
+                  href="https://totem.cityprotocol.co/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
+                >
                   Totem Toy City
-                </div>
+                </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <a
@@ -56,9 +66,14 @@ function DesktopNav() {
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
-                <div className="px-2 py-2 text-sm font-semibold">
+                <a
+                  href="https://cityprotocol.co/ipstrategy/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-2 py-2 text-sm font-semibold hover:underline"
+                >
                   IP Strategy
-                </div>
+                </a>
               </NavigationMenuLink>
             </div>
           </NavigationMenuContent>
@@ -109,6 +124,7 @@ function DesktopNav() {
                   The Creator Journey: From Zero To Empire
                 </a>
               </NavigationMenuLink>
+
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -180,14 +196,24 @@ function MobileNav() {
                     </a>
                   </li>
                   <li>
-                    <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
+                    <a
+                      href="https://viral-city.cityprotocol.co/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
                       Viral City
-                    </div>
+                    </a>
                   </li>
                   <li>
-                    <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
+                    <a
+                      href="https://totem.cityprotocol.co/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block py-3 pl-[10%] font-semibold text-[#193246]"
+                    >
                       Totem Toy City
-                    </div>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -200,12 +226,14 @@ function MobileNav() {
                     </a>
                   </li>
                   <li>
-                    <div
+                    <a
+                      href="https://cityprotocol.co/ipstrategy/"
+                      target="_blank"
                       rel="noreferrer"
                       className="block py-3 pl-[10%] font-semibold text-[#193246]"
                     >
                       IP Strategy
-                    </div>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -231,8 +259,7 @@ function MobileNav() {
                     <div className="block py-3 pl-[10%] font-semibold text-[#193246]">
                       City Launchpad Docs
                     </div>
-                  </li>
-                </ul>
+                  </li>                </ul>
               </div>
             </li>
 

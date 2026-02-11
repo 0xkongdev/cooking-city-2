@@ -1,7 +1,7 @@
+import { SiteHeader } from "@/components/site-header";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { SiteHeader } from "@/components/site-header";
 
 const geistSans = Space_Grotesk({
   variable: "--font-geist-sans",
@@ -10,13 +10,13 @@ const geistSans = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "City Protocol",
-  description: "The IP Capital Market Starts Here",
-  metadataBase: new URL("https://city.example.com"),
+  description: "City Protocol is a decentralized protocol powering IP Capital Markets; designed for creators to launch, scale, and sustain IP. We bring IP assets, DATs and RWA onchain, powering IP as a global asset class. For the first time, creativity gains liquidity and scalability like companies unlocked through IPOs — now powered by decentralized markets.",
+  metadataBase: new URL("https://cityprotocol.co"),
   openGraph: {
     title: "City Protocol",
     description:
-      "Solutions and resources to grow the inner power of intellectual property.",
-    url: "https://city.example.com",
+      "City Protocol is a decentralized protocol powering IP Capital Markets; designed for creators to launch, scale, and sustain IP. We bring IP assets, DATs and RWA onchain, powering IP as a global asset class. For the first time, creativity gains liquidity and scalability like companies unlocked through IPOs — now powered by decentralized markets.",
+    url: "https://cityprotocol.co",
     siteName: "City Protocol",
     images: [
       { url: "/next.svg", width: 1200, height: 630, alt: "City Protocol" },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "City Protocol",
     description:
-      "Solutions and resources to grow the inner power of intellectual property.",
+      "City Protocol is a decentralized protocol powering IP Capital Markets; designed for creators to launch, scale, and sustain IP. We bring IP assets, DATs and RWA onchain, powering IP as a global asset class. For the first time, creativity gains liquidity and scalability like companies unlocked through IPOs — now powered by decentralized markets.",
     images: ["/next.svg"],
   },
   icons: { icon: "/images/logo.png" },
